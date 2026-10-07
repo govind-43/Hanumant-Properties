@@ -212,6 +212,22 @@ nav ul.dd{position:absolute;top:100%;left:-16px;min-width:230px;background:var(-
 .gal img{transition:opacity .4s,transform .45s var(--ease)}
 .msg[hidden]{display:none}
 @media(max-width:900px){.hasdd{padding:0}nav ul.dd{position:static;inset:auto;opacity:1;visibility:visible;transform:none;box-shadow:none;background:none;padding:0 0 0 14px;max-height:none;color:inherit;overflow:visible}.dl{padding:10px 0;font-size:.95rem;border-bottom:1px solid var(--line);border-radius:0}.dl:hover{background:none;padding-left:0}}
+
+/* Fix Properties nav alignment */
+.nav .hasdd > a.l {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  line-height: 1;
+  padding: 6px 0;
+}
+
+.nav .hasdd > a.l span {
+  display: inline-block;
+  line-height: 1;
+}
+
 </style>
 </head>
 <body>
@@ -230,7 +246,7 @@ nav ul.dd{position:absolute;top:100%;left:-16px;min-width:230px;background:var(-
 <section class="hero" id="home">
 <div class="bg" id="hbg"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=75" alt="Modern luxury home with warm evening lighting" fetchpriority="high" onerror="this.remove()"></div>
 <div class="wrap">
-<span class="eyebrow">Exceptional properties. Extraordinary living.</span>
+<span class="eyebrow">Exceptional properties | Extraordinary living</span>
 <h1>Find a Place Worth <em>Calling Home.</em></h1>
 <p>Hanumant Properties helps families and investors buy, rent and sell across Rohini Sector 24 and nearby sectors — with honest advice and a personal touch.</p>
 <div class="acts"><a href="#properties" class="btn p mag">Explore Properties <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="#contact" class="btn o">Schedule a Consultation</a></div>
